@@ -12,7 +12,7 @@ scaler = joblib.load('scaler.pkl')
 model = joblib.load('model.pkl') 
 @app.route('/')
 def home():
-    return "Hello, World"
+    return "Hello, World#"
 
 
 @app.route('/predict', methods=['POST'])
