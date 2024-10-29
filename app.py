@@ -18,7 +18,9 @@ def home():
 @app.route('/predict', methods=['POST'])
 
 def predict():
+    
     data = request.get_json()
+    print(data)
     input_data = data['data']
     print(input_data)
     try:        
