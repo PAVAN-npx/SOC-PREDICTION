@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app) 
 
 # Load the scaler and model
-scaler = joblib.load('scaler.pkl')
+scaler = joblib.load('sca
 model = joblib.load('model.pkl') 
 @app.route('/')
 def home():
