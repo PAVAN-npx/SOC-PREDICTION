@@ -31,7 +31,7 @@ def predict():
         # Scale the input data
         std_data = scaler.transform(input_data_as_numpy_array)
         
-        # Make prediction
+        
         prediction = model.predict(std_data)
         
         # Return prediction as JSON
