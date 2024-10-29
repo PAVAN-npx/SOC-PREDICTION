@@ -35,7 +35,7 @@ def predict():
         prediction = model.predict(std_data)
         
         # Return prediction as JSON
-        return jsonify({'Predicted Temperature (°C)': prediction[0]})
+        return jsonify({'prediction': str(prediction)})
     
     except Exception as e:
         return jsonify({'error': str(e)})
